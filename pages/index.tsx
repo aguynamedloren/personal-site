@@ -31,6 +31,7 @@ const Home: NextPage = () => {
               <a 
                 href='mailto:lorendburton@gmail.com' 
                 target='_blank'
+                rel='noreferrer'
                 className='rounded-full bg-green border-black border-2 py-2 px-8 items-center'>
                 <span className='font-medium'>Email Me</span>
               </a>

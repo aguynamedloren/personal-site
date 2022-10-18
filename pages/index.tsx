@@ -47,12 +47,12 @@ const Home: NextPage = () => {
                 href={emailUrl}
                 target='_blank'
                 rel='noreferrer'
-                className='flex rounded-full bg-green border-black border-2 px-10 items-center h-10 mr-2'
+                className='flex rounded-full bg-green border-black border-2 px-10 items-center h-10 mr-2 hover:bg-black hover:text-green'
               >
                 <span className='font-sans font-medium'>Email Me</span>
               </a>
 
-              <a href={linkedInUrl} className='inline-block'>
+              <a href={linkedInUrl}>
                 <Image
                   src='/icon-linkedin.svg'
                   alt='LinkedIn'

@@ -15,3 +15,9 @@ npm run dev
 yarn install
 yarn dev
 ```
+
+### Screenshots:
+
+![mobile](./screenshots/mobile.png)
+
+![desktop](./screenshots/desktop.png)

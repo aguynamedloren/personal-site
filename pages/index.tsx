@@ -34,7 +34,7 @@ const Home: NextPage = () => {
               Software Engineer
             </h1>
 
-            <p className='mt-10 pr-0 lg:pr-16 font-light leading-7'>
+            <p className='font-sans mt-10 pr-0 lg:pr-14 font-light leading-7'>
               With over a decade of experience building and growing software
               startups from the ground up, I have a proven track record developing
               across the tech stack, establishing engineering best practices, and
@@ -49,7 +49,7 @@ const Home: NextPage = () => {
                 rel='noreferrer'
                 className='flex rounded-full bg-green border-black border-2 px-10 items-center h-10 mr-2'
               >
-                <span className='font-medium'>Email Me</span>
+                <span className='font-sans font-medium'>Email Me</span>
               </a>
 
               <a href={linkedInUrl} className='inline-block'>

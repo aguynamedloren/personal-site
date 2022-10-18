@@ -18,6 +18,6 @@ yarn dev
 
 ### Screenshots:
 
-![mobile](./screenshots/mobile.png | width=200)
+![mobile](./screenshots/mobile.png)
 
 ![desktop](./screenshots/desktop.png)

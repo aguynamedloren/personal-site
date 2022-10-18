@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Image from 'next/future/image'
 
 const emailUrl = 'mailto:lorendburton@gmail.com'
 const linkedInUrl = 'https://www.linkedin.com/in/aguynamedloren/'
@@ -9,22 +9,32 @@ const stackoverflowUrl = 'https://stackoverflow.com/users/524659/aguynamedloren'
 
 const Home: NextPage = () => {
   return (
-    <div className='flex flex-col items-center justify-center text-black'>
+    <div className='flex flex-col text-black h-screen'>
       <Head>
         <title>Loren Burton, Software Engineer</title>
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <main className='bg-green flex justify-center w-full mt-1'>
-        <div className='flex w-full max-w-4xl pt-20'>
+      <div className='lg:hidden border-4 border-green rounded-full ml-4 mt-4 absolute'>
+        <Image
+          className='rounded-full'
+          src='/profile-photo-sm.jpg'
+          alt='Profile photo'
+          width={100}
+          height={100}
+        />
 
-          <div className='w-3/6'>
-            <h1 className='text-5xl font-serif mt-7 leading-tight'>
+      </div>
+
+      <main className='flex bg-green justify-center w-full px-4 pt-16 mt-16 lg:mt-1 lg:h-[60%] lg:min-h-[600px]'>
+        <div className='flex w-full max-w-4xl'>
+          <div className='w-full lg:w-3/6 mt-auto mb-20'>
+            <h1 className='text-4xl lg:text-5xl font-serif mt-7 leading-tight'>
               Loren Burton,<br />
               Software Engineer
             </h1>
 
-            <p className='mt-10 pr-16 font-light leading-7'>
+            <p className='mt-10 pr-0 lg:pr-16 font-light leading-7'>
               With over a decade of experience building and growing software
               startups from the ground up, I have a proven track record developing
               across the tech stack, establishing engineering best practices, and
@@ -72,13 +82,12 @@ const Home: NextPage = () => {
             </div>
           </div>
 
-          <div className='w-3/6 m-0 p-0'>
+          <div className='hidden lg:block w-3/6 mt-auto'>
             <Image
               src='/profile-photo.png'
               alt='Profile photo'
               width={445}
               height={534}
-              layout='responsive'
             />
           </div>
 

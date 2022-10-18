@@ -12,6 +12,9 @@ module.exports = {
     fontFamily: {
       sans: ['Open Sans', 'sans-serif'],
       serif: ['Crimson Text', 'serif']
+    },
+    screens: {
+      lg: '924px'
     }
   },
   plugins: []
